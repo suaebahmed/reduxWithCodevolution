@@ -4,10 +4,10 @@ import { connect } from 'react-redux'
 
 function CakeContainer({data,buyCake}) {
     // console.log(data)
-    // useEffect(()=>{
-    //     buyCake()
-    // },[]);
-
+     useEffect(()=>{
+         buyCake()
+    },[]);
+    
     return data.loading ?(<div>
             {
                 data.posts.map(post=>{
